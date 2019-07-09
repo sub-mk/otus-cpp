@@ -6,7 +6,7 @@ else()
     set(VERSION 1)
 endif()
 
-project(helloworld VERSION 0.0.${VERSION})
+project(hw1 VERSION 0.0.${VERSION})
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
