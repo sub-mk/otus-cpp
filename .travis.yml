@@ -15,5 +15,5 @@ jobs:
             cmake --build . && \
             cmake --build . --target test && \
             cmake --build . --target package && \
-          curl -T hw1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -sub-mk:$BINARY_API_KEY "https://api.bintray.com/content/sub-mk/otus-cpp/hw1/$TRAVIS_BUILD_NUMBER/hw1-0.0.$TRAVIS_BUILD_NUMBER-Linix.deb;deb_ditribution=trusty;deb_component=main;deb_architecture=amd64;publish=1";
+            curl -T hw1-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -"sub-mk":$BINARY_API_KEY "https://api.bintray.com/content/sub-mk/otus-cpp/hw1/$TRAVIS_BUILD_NUMBER/hw1-0.0.$TRAVIS_BUILD_NUMBER-Linix.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1";
           fi
